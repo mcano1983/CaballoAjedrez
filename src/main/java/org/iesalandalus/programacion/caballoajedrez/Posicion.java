@@ -37,15 +37,17 @@ public class Posicion {
 		this.setFila(fila);
 		this.setColumna(columna);
 	}
-	public Posicion (Posicion nuevaPosicion) { 
-		if (nuevaPosicion!=null) {
-		this.fila=nuevaPosicion.getFila();
-		this.columna=nuevaPosicion.getColumna();
-		}else {
-			throw new IllegalArgumentException("ERROR: No es posible copiar una posición nula.");	
+
+	public Posicion(Posicion nuevaPosicion) {
+		if (nuevaPosicion != null) {
+			this.fila = nuevaPosicion.getFila();
+			this.columna = nuevaPosicion.getColumna();
+		} else {
+			throw new IllegalArgumentException("ERROR: No es posible copiar una posición nula.");
 		}
-		
-		}
+
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -75,6 +77,5 @@ public class Posicion {
 	public String toString() {
 		return "[fila=" + this.fila + ", columna=" + this.columna + "]";
 	}
-	
-	
+
 }
