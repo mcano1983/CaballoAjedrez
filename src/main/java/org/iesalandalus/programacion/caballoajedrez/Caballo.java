@@ -34,9 +34,14 @@ public class Caballo {
 		this.color = color;
 		if (color == Color.NEGRO) {
 			posicion = new Posicion(8, 'b');
-		} else {
+		}
+		if (color==Color.BLANCO ) {
 			posicion = new Posicion(1, 'b');
 		}
+		if(color==null) {
+			throw new IllegalArgumentException("ERROR: No se puede asignar un color nulo.");
+		}
+	
 
 	}
 
