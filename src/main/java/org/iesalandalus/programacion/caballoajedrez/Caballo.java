@@ -74,7 +74,7 @@ public class Caballo {
 				break;
 
 			case DERECHA_ARRIBA:
-				// to do
+
 				posicion = new Posicion(posicion.getFila() + 1, (char) (posicion.getColumna() + 2));
 				break;
 
