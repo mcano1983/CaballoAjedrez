@@ -22,7 +22,7 @@ public class MainApp {
 		do {
 			System.out.println("ELIGE UNA OPCIÓN DEL MENÚ");
 			System.out.println(
-					"1.Crear caballo por defecto \n2.Crear caballo de un color \n3.Crear caballo de un color columna incial valida \n4.Mover caballo \n0.Salir");
+					"1.Crear caballo por defecto \n2.Crear caballo de un color \n3.Crear caballo de un color columna incial válida \n4.Mover caballo \n0.Salir");
 			numero = elegirOpcion();
 			ejecutarOpcion(numero);
 		} while (numero > 4 || numero < 0);
@@ -31,7 +31,7 @@ public class MainApp {
 	private static int elegirOpcion() {
 		int numero;
 		do {
-			System.out.println("Elige una opcion del menu");
+			System.out.println("Elige una opcion del menú");
 			numero = Entrada.entero();
 		} while (numero < 0 || numero > 4);
 		return numero;
@@ -103,7 +103,7 @@ public class MainApp {
 	private static char elegirColumnaInicial() {
 		char columna;
 		do {
-			System.out.println("Elige una columna para tu caballo blanco entre:\n.G\n.B");
+			System.out.println("Elige una opción :\n.Columna G\n.Columna B");
 			columna = Entrada.caracter();
 			if (columna == 'g') {
 				columna = 'g';
